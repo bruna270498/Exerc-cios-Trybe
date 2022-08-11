@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "/home/bruna/Trybe/fundamentos/bloco-3-introdução-a-html-e-css/dia-1-html-css-estruturas-de-pagina/index.html"
+        }
+    ]
+}
