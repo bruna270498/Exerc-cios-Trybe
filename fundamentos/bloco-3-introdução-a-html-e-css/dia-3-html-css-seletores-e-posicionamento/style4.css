@@ -1,0 +1,26 @@
+div:hover{
+    border-width: 5px;
+    border-color: red;
+    border-style:ridge;
+}
+div:nth-child(7){
+    background-color: green;
+}
+div:nth-child(6){
+    background-color: blue;
+}
+div:nth-child(5){
+    background-color: coral;
+    padding: 10px;
+}
+div:nth-child(4){
+    background-color: darkmagenta;
+}
+div:nth-child(3){
+    background-color: fuchsia;
+}
+h3{
+    font-style: italic;
+    color: bisque;
+}
+
