@@ -1,0 +1,10 @@
+.sites{
+ text-align: center;
+}
+
+li:active{
+    color: rebeccapurple;
+}
+li:hover{
+    background-color: brown;
+}
