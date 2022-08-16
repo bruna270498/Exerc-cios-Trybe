@@ -19,8 +19,21 @@ div:nth-child(4){
 div:nth-child(3){
     background-color: fuchsia;
 }
-h3{
-    font-style: italic;
-    color: bisque;
+div:nth-child(3)  { 
+    color:blanchedalmond
 }
-
+div:nth-child(odd) h3{
+    font-style: italic;
+}
+div:nth-child(4){
+    color: aqua;
+}
+div:nth-child(5){
+    color: firebrick;
+}
+div:nth-child(6){
+    color: blanchedalmond;
+}
+div:nth-child(7){
+    color: greenyellow;
+}
