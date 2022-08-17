@@ -1,0 +1,25 @@
+.frases{
+    background-color: yellow;
+}
+ol>li:nth-child(even){
+    color: green
+}
+ol>li:nth-child(odd){
+    text-transform:uppercase;
+}
+
+h1,h3 em{
+    color:red;
+    border: 1px solid black;
+}
+li > em{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.lin>li:nth-child(-1n + 3  ){   
+     background-color: blue;
+}
+.lis>li:hover{
+    background-color: rgb(21, 227, 21);
+    color: beige;
+}

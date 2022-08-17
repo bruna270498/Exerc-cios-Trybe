@@ -1,0 +1,11 @@
+.sites{
+ text-align: center;
+ list-style: none;
+}
+
+li:active{
+    color: rebeccapurple;
+}
+li:hover{
+    background-color: brown;
+}
