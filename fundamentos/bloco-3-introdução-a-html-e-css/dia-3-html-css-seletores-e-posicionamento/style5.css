@@ -16,6 +16,10 @@ li > em{
     font-size: 20px;
     font-weight: bolder;
 }
-.lis:hover{
-    text-transform: uppercase;
+.lin>li:nth-child(-1n + 3  ){   
+     background-color: blue;
+}
+.lis>li:hover{
+    background-color: rgb(21, 227, 21);
+    color: beige;
 }
