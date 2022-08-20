@@ -23,7 +23,7 @@
 
 //////////////exercicio 5///////////////
 
-let name = ['joão', 'maria', 'antonio', 'margarida'];
-for (let res of name) {
-    console.log(res)
-}
+// let name = ['joão', 'maria', 'antonio', 'margarida'];
+// for (let res of name) {
+//     console.log(res)
+// }
