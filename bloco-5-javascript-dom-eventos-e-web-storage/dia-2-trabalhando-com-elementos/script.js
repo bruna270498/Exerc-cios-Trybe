@@ -21,3 +21,9 @@ filho.textContent='Sou mas eu';
 primeiroFilho.appendChild(filho)
 
 document.getElementById('#primeiroFilho.childNodes()')
+
+pai.removeChild(terceiroFilho)
+pai.removeChild(quartoEUltimoFilho)
+
+
+
