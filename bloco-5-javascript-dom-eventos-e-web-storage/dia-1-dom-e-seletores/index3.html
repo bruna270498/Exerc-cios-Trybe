@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+       
+        6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+       function paragrafo(texto){
+         const p = document.getElementsByTagName("p")[1].innerText;
+         p.innetText = 'texto';
+         return p
+       }
+        
+       function alterarCor(parametro1){
+         const color = document.getElementsByClassName('.main-content');
+         color.style.backgroundColor = 'parametro1';
+         return color
+       }
+
+       function corFundo(parametro){
+         const red = document.getElementsByClassName(".center-content ");
+         red.style.backgroundColor = 'parametro';
+         return red
+       }
+       function titulo(title){
+         const priH1 = document.getElementsByTagName('h1');
+         priH1.innetTex = title;
+         return priH1
+       }
+       function ps(){
+        let tagsP = document.getElementsByTagName('p');
+        let maiusculo = tagsP.toUpperCase();
+        return maiusculo
+       }
+       function conP(){
+        console.log(document.getElementsByTagName('p'))
+       }
+        paragrafo('Daqui 2 anos me vejo já desenvolvendo sites');
+        alterarCor('rgb(76,164,109)');
+        corFundo('white');
+        titulo('Exercicios 5.1');
+        ps();
+        conP();
+        
+
+
+
+    </script>
+  </body>
+</html>
