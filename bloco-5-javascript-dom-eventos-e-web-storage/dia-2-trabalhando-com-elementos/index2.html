@@ -57,20 +57,48 @@
   </head>
   <body> 
     <script>
+      const body1=document.createElement('body')
+      html.appendChild(body1)
      let primeiroH1= document.createElement('h1')
-      primeiroH1.textContent= 'Exercícios 5.2 - JavaScript DOM'
+      primeiroH1.innerText= 'Exercícios 5.2 - JavaScript DOM'
       body.appendChild(primeiroH1)
 
-     const Main = document.createElement('main').className = main-content ;
+     const Main = document.createElement('main').className = 'main-content' ;
      body.appendChild(Main)
      
-     const sctionCreate= document.createElement('section').className(' center-content ')
+     const sctionCreate= document.createElement('section').className = ' center-content '
      main-content.appendChild(sctionCreate)
 
      const Paragrafo=document.createElement('p');
      Paragrafo.textContent = 'Vamo que Vamo';
      center-content.appendChild(Paragrafo)
 
+     const section2 = document.createElement('section').className = 'left-content ';
+     Main.appendChild(section2);
+
+     const section3 = document.createElement('section').className= 'right-content';
+     Main.appendChild(section3);
+
+     const imagem = document.createElement('img').className='small-image.'
+     imagem.src='https://picsum.photos/200'
+     section2.appendChild(imagem)
+
+     const lista = document.createElement('ul');
+     lista.innerText='um', 'dois','tres','quatro','cinco','seis','sete','oito','nove','dez';
+     section3.appendChild(lista);
+
+     function tagsH3(){ 
+     const H3=document.createElement('h3')
+     Main.appendChild(H3)};
+     function tagsH3();
+
+     primeiroH1.className='title';
+
+     tagsH3.className='description';
+     removeChild(section2);
+     section3.style.marginRight = auto;
+     sctionCreate.parentElement.style.backgroundColor= green;
+     lista.remove('nove', 'dez');
     </script>
   </body>
 </html>
