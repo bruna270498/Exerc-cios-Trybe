@@ -57,21 +57,24 @@
   </head>
   <body> 
     <script>
-      const body1=document.createElement('body')
-      html.appendChild(body1)
+    
+     let body = document.body;
+     
      let primeiroH1= document.createElement('h1')
       primeiroH1.innerText= 'Exercícios 5.2 - JavaScript DOM'
       body.appendChild(primeiroH1)
 
-     const Main = document.createElement('main').className = 'main-content' ;
-     body.appendChild(Main)
+     const Main = document.createElement('main');
+     Main.className = 'main-content' ;
+     Main.innerText='oiiiiiii'
+     body.appendChild('main-content')
      
      const sctionCreate= document.createElement('section').className = ' center-content '
-     main-content.appendChild(sctionCreate)
+     Main.appendChild(sctionCreate)
 
      const Paragrafo=document.createElement('p');
-     Paragrafo.textContent = 'Vamo que Vamo';
-     center-content.appendChild(Paragrafo)
+     Paragrafo.innerText = 'Vamo que Vamo';
+     sctionCreates.appendChild(Paragrafo)
 
      const section2 = document.createElement('section').className = 'left-content ';
      Main.appendChild(section2);
@@ -90,7 +93,7 @@
      function tagsH3(){ 
      const H3=document.createElement('h3')
      Main.appendChild(H3)};
-     function tagsH3();
+     tagsH3();
 
      primeiroH1.className='title';
 
