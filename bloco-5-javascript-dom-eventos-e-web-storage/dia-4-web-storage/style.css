@@ -1,0 +1,36 @@
+ body{
+    background-color: rgb(224, 226, 147);
+}
+#cabecalho{
+    width: auto;
+}
+#titulo{
+    color: rgba(79, 2, 2, 0.606);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+    font-size: 40px;
+    border:1px solid rgba(79, 2, 2, 0.606);
+    text-align: center;
+    background-color: rgb(240, 247, 35);
+    border-radius: 20px;
+    width: auto;
+}
+.assunto{
+    padding: bottom 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:blue
+}
+#subtitulo{
+    text-align: center;
+
+}
+#link{
+    border-radius: 10px;
+    border: 1,5px solid rgba(79, 2, 2, 0.606);
+    color: black;
+    background-color: blueviolet;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+}
