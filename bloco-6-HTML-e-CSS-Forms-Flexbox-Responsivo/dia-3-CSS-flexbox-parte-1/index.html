@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flex Flow</title>
+    <style>
+      .box, .box1, .box2 , .box3 {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 30%;
+      }
+
+      .box-container, .box-container1, .box-container2, .box-container3 {
+        background-color: #0fa36b;
+        display: flex;
+      }
+      .box-container{
+        flex-flow: row-reverse;
+        flex-wrap: nowrap;
+      }
+      .box-container1{
+        flex-flow: column;
+      }
+      .box-container2{
+        flex-flow: column-reverse;
+      }
+      .box-container3{
+        flex-wrap:wrap;
+      }
+    
+    
+
+    </style>
+
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+
+    <div class="box-container1">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+        <div class="box1">5</div>
+      </div>
+
+      <div class="box-container2">
+        <div class="box2">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        <div class="box2">5</div>
+      </div>
+
+      <div class="box-container3">
+        <div class="box3">1</div>
+        <div class="box3">2</div>
+        <div class="box3">3</div>
+        <div class="box3">4</div>
+        <div class="box3">5</div>
+      </div>
+  </body>
+</html>
