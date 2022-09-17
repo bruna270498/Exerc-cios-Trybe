@@ -11,10 +11,10 @@ const substituaX = (nome) => {
    let o = frase.replace('x', nome)
     console.log(o)
 }
-
+substituaX('bebeno')
 const minhasSkills = () => {
     const skills = ['JS', 'CSS', 'ES6']
-    let frase = `Minhas três principais habilidades são:${skills}.`
-    console.log(`${frase} ${substituaX('o')}`)
+    let frase = `Minhas três principais habilidades são: ${skills}.`
+    console.log(frase)
 }
 minhasSkills()
