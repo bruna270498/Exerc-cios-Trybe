@@ -62,8 +62,20 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-
-  // const ano = books.forEach();
   const livros = books.find((livro) => livro.author.birthYear === 1947
   )
-  console.log(livros.author.name);
+  console.log(`O livro ${livros.author.name} tem a autora que nasceu em 1947!`);
+  
+
+  function authorBornIn1947 () { 
+      let titulo;
+      books.forEach((livro) => {
+        if (!titulo || livro.name.length < titulo.length) {
+          titulo = livro.name;
+        }
+      });
+      console.log(`O menor titulo é ${titulo}`);
+    };
+
+    authorBornIn1947();
+//  console.log(authorBornIn1947)
