@@ -66,20 +66,24 @@ const books = [
 //   console.log(novoArrayLivro);
 
  const autorIdade = books.map((autor) => ({age:autor.author.birthYear, name:autor.author.name}));
-//  console.log(autorIdade.sort());
+ console.log(autorIdade.sort());
 
 const cientificoFantasia = books.filter((genero) => (genero.genre === 'Ficção Científica' || genero.genre === 'Fantasia')
 )
-// console.log(cientificoFantasia)
+console.log(cientificoFantasia)
 
 const idadeLivro = books.filter((ano) => 2022-ano.releaseYear >= 60);
 idadeLivro.sort((a,b) => a.releaseYear-b.releaseYear)
-// console.log(idadeLivro)
+console.log(idadeLivro)
 
 const autorGenero = cientificoFantasia.map((autor) => autor.author.name)
 
-// console.log(autorGenero)
+console.log(autorGenero)
 
 const livrosVelhos = idadeLivro.map((titulo) => titulo.name)
 
 console.log(livrosVelhos)
+
+const JRR = books.find((book) => (book.author.name.split(' ').filter((word) => word.endsWith('.')).length === 3)).name
+
+console.log(JRR)
