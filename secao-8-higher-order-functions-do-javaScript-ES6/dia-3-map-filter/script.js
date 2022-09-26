@@ -67,3 +67,7 @@ const books = [
 
  const autorIdade = books.map((autor) => ({age:autor.author.birthYear, name:autor.author.name}));
 //  console.log(autorIdade.sort());
+
+const cientificoFantasia = books.filter((genero) => (genero.genre === 'Ficção Científica' || genero.genre === 'Fantasia')
+)
+console.log(cientificoFantasia)
