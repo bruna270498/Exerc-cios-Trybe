@@ -78,5 +78,8 @@ idadeLivro.sort((a,b) => a.releaseYear-b.releaseYear)
 
 const autorGenero = cientificoFantasia.map((autor) => autor.author.name)
 
-console.log(autorGenero)
+// console.log(autorGenero)
 
+const livrosVelhos = idadeLivro.map((titulo) => titulo.name)
+
+console.log(livrosVelhos)
