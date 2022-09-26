@@ -70,4 +70,8 @@ const books = [
 
 const cientificoFantasia = books.filter((genero) => (genero.genre === 'Ficção Científica' || genero.genre === 'Fantasia')
 )
-console.log(cientificoFantasia)
+// console.log(cientificoFantasia)
+
+const idadeLivro = books.filter((ano) => 2022-ano.releaseYear >= 60);
+idadeLivro.sort((a,b) => a.releaseYear-b.releaseYear)
+// console.log(idadeLivro)
