@@ -63,4 +63,7 @@ const books = [
   
   // Adicione o código do exercício aqui:
   const novoArrayLivro = books.map( (livros) => `Livro: ${livros.name} / Genero: ${livros.genre} / Autor: ${livros.author.name}`);
-  console.log(novoArrayLivro)
+//   console.log(novoArrayLivro);
+
+ const autorIdade = books.map((autor) => ({age:autor.author.birthYear, name:autor.author.name}));
+//  console.log(autorIdade.sort());
