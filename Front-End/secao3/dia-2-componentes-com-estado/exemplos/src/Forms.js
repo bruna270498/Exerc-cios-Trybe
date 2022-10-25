@@ -11,12 +11,17 @@ class Forms extends React.Component{
             nome: '',
             senha: '',
             texto:'',
+            VaiComparecer: false,
         };
     }
-    SalvarNome(event) {
-        console.log(event)
+    //isso é um event handler genérico:
+    //porque se o nome mudar evita que meu código quebre
+    //e também nós permite usar em varias tags
+    Salvar({target}) {
+        const { name } = target
+        const value = target.type === 'checkbox' ? target.checked : target.value;
         this.setState({
-            nome: event.target.value
+          [name]: value
         })
     }
     SalvarSenha(event) {
@@ -24,19 +29,17 @@ class Forms extends React.Component{
             senha:event.target.value
         })
     }
-    Texto(event) {
-        this.setState({
-            texto:event.target.value
-        })
-    }
+
     render() {
         return (
         <div>
            <form>
-            <input name="nome" type={"text"} value={this.state.SalvarNome} onChange={this.SalvarNome}></input>
+            <fieldset>
+            <input name="nome" type={"text"} value={this.state.Salvar} onChange={this.SalvarNome}></input>
             <br /><input name="senha" type={"password"} value={this.state.SalvarSenha} onChange={this.SalvarSenha}></input>
-            <br /><textarea name="texto" value={this.state.Texto} onChange={this.Texto}></textarea>
-            <input type={"checkbox"} value={} ></input>
+            <br /><textarea name="texto" value={this.state.Salvar} onChange={this.Salvar}></textarea>
+            <input type={"checkbox"} name="VaiComparecer" value={this.state.Salvar} ></input>
+            </fieldset>
            </form>
 
         </div>
